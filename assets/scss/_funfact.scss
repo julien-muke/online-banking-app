@@ -1,0 +1,63 @@
+.funfacts {
+    .single-funfact {
+        margin-right: 30px;
+        margin-top: 20px;
+
+        h3 { 
+            font-size: 45px;
+            color: $theme-color;
+    
+            span { 
+    
+            }
+        }
+    
+        p { 
+            color: $theme-color;
+            font-size: 16px;
+        }
+
+        &:last-child {
+            h3, p {
+                color: #32C072;
+            }
+        }
+    }
+}
+
+.error-content {
+    img {
+        @media (max-width: 767px) {
+            max-width: 70%;
+            margin: 0 auto;   
+        }
+    }
+}
+
+.leaf {
+    position: absolute;
+    right: 15%;
+    top: 10%;
+    z-index: -1;
+
+    @media (max-width: 767px) {
+        right: 5%;
+        top: 22%;    
+    }
+}
+
+.leaf-copy {
+    position: absolute;
+    left: 10%;
+    bottom: 15%;
+    z-index: -1;
+
+    @media (max-width: 767px) {
+        left: 5%;
+        bottom: 3%;       
+    }
+
+    img {
+        max-width: 70%;
+    }
+}

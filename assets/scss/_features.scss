@@ -1,0 +1,304 @@
+.features-card-item { 
+    background-color: #fff;
+    box-shadow: 0px 4px 80px rgba(8, 15, 30, 0.06);
+    border-radius: 3px;
+    padding: 40px;
+    margin-top: 30px;
+    transition: all .3s ease-in-out;
+
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+
+        h3 {
+            color: $theme-color;
+        }
+    }
+
+	.icon { 
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 36px;
+        text-align: center;
+        background-color: #EF2469;
+        color: #fff;
+        transition: all .3s ease-in-out;
+        border-radius: 50%;
+        display: inline-block;
+        margin-bottom: 20px;
+
+        &.icon2 {
+            background-color: #32C072;
+        }
+
+        &.icon3 {
+            background-color: #FFD44B;
+        }
+	}
+
+	p { 
+        font-size: 18px;
+	}
+}
+
+.single-core-feature { 
+    box-shadow: 0px 4px 80px rgba(8, 15, 30, 0.06);
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 40px 30px;
+    margin-top: 30px;
+
+	.icon { 
+        margin-bottom: 20px;
+	}
+
+	.content { 
+
+		h3 { 
+            margin-bottom: 10px;
+            padding-top: 4px;
+		}
+
+		p { 
+            font-size: 18px;
+		}
+	}
+}
+
+.animated-img-wrapper {
+    position: relative;
+
+    img {
+        &:first-of-type {
+            filter: drop-shadow(0px 3.86138px 57.9208px rgba(8, 15, 30, 0.1));
+            border-radius: 9.65346px;
+        }
+
+        &:nth-child(2) {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            filter: drop-shadow(0px 4.28285px 64.2428px rgba(8, 15, 30, 0.1));
+            border-radius: 10.7071px;
+            margin-top: -50px;
+            z-index: 2;
+        }
+
+        &:last-of-type {
+            position: absolute;
+            top: 30%;
+            right: -10px;
+
+            @media (min-width: 1200px) {
+                right: -100px;
+            }
+        }
+    }
+}
+
+.block-img {
+    
+    img {
+        @media (max-width: 991px) {
+            max-width: 80%;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 500px) {
+            max-width: 70%;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+}
+
+.block-img-right {
+    position: relative;
+
+    img {
+        &:first-of-type {
+            filter: drop-shadow(0px 3.86138px 57.9208px rgba(8, 15, 30, 0.1));
+            border-radius: 9.65346px;
+        }
+
+        &:nth-child(2) {
+            position: absolute;
+            filter: drop-shadow(0px 3.87372px 58.1058px rgba(8, 15, 30, 0.1));
+            border-radius: 9.68431px;
+            z-index: 2;
+            right: -40px;
+            top: 40%;
+
+            @media (max-width: 991px) {
+                right: 3px;
+            }
+        }
+
+    }
+}
+
+.features-list { 
+    margin-top: 30px;
+
+    ul { 
+        padding: 0;
+        margin: 0;
+
+        li { 
+            margin-top: 10px;
+            position: relative;
+            font-size: 18px;
+            padding-left: 25px;
+            color: $heading-color;
+            font-weight: 500;
+
+            &.no, &.not {
+                &::before { 
+                    content: "\f00d";
+                    color: $second-color;
+                }
+            }
+
+            &::before {
+                position: absolute;
+                left: 0;
+                top: 2px;
+                font-family: $fa;
+                content: "\f00c";
+                color: $theme-color;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+.mobile-block {
+    @media (max-width: 767px) {
+        img {
+            max-width: 70%;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+}
+
+.step-features {
+    counter-reset: css-counter 0;
+    margin-top: 60px;
+
+    @media (max-width: 767px) {
+        margin-top: 30px;
+    }
+
+    .single-featured-item {
+        position: relative;
+        counter-increment: css-counter 1;
+        padding-left: 80px;
+        margin-top: 30px;
+
+        @media (max-width: 500px) {
+            padding-right: 10px;
+            padding-left: 60px;
+            margin-top: 20px;
+        }
+
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+
+        &.item2 {
+            &::before, &::after {
+                background: #32C072;
+            }
+        }
+
+        &.item3 {
+            &::before, &::after {
+                background: #7956BF;
+            }
+        }
+
+        &::before {
+            content: counter(css-counter);
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: #EF2469;
+            border-radius: 50px;
+            color: $white;
+            font-size: 20px;
+            line-height: 50px;
+            text-align: center;
+            left: 0;
+            font-weight: 600;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 45px;
+            background: #EF2469;
+            left: 24px;
+            top: 60px;
+        }
+        
+        p { 
+            color: rgba($color: #fff, $alpha: 0.70);
+            font-size: 20px;
+
+            @media (max-width: 767px) {
+                font-size: 18px;
+            }
+
+        }
+    }
+}
+
+
+.single-about-features { 
+    margin-top: 30px;
+
+    @media (max-width: 1199px) {
+        padding-right: 90px;
+    }
+
+    @media (max-width: 991px) {
+        padding-right: 30px;
+    }
+
+    @media (max-width: 767px) {
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+	.icon { 
+        margin-bottom: 40px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+	}
+
+	.content { 
+
+		h3 { 
+
+		}
+
+		p { 
+            color: #617686;
+		}
+	}
+}

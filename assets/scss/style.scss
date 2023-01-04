@@ -1,0 +1,77 @@
+/*
+Theme Name: Xmoze
+Author: ModinaTheme
+Author URI: https://themeforest.net/user/modinatheme/
+Description: SaaS Bootstrap HTML5 Landing Template
+Version: 1.0.0
+*/
+
+// BASIC
+@import 'basic';
+// MIXIN
+@import 'variables';
+// TYPOGRAPHY
+@import 'typography';
+// MIX
+@import 'mix';
+// HELPER
+@import 'helper';
+// ANIMATION
+@import 'animation';
+// Button 
+@import 'btn';
+// Preloader 
+@import 'preloader';
+
+
+/* ----------------------------------
+    Template Section Styles
+ ------------------------------------*/
+
+// Menu - Header Section 
+@import 'header';
+
+// Hero Slide - Section 
+@import 'hero';
+
+// Section Title - Heading 
+@import 'section';
+
+// About - Section 
+@import 'about';
+
+// Features - Section 
+@import 'features';
+
+// services - Section 
+@import 'services';
+
+// testimonial - Section 
+@import 'testimonial';
+
+// price - Section 
+@import 'price';
+
+// project - Section 
+@import 'project';
+
+// Call To Action - Section 
+@import 'cta';
+
+// team - Section 
+@import 'team';
+
+// funfact - Section 
+@import 'funfact';
+
+// FAQ - Section 
+@import 'faq';
+
+// Blog - Section 
+@import 'blog';
+
+// Contact Us - Section 
+@import 'contact';
+
+// footer - Section 
+@import 'footer';
